@@ -19,7 +19,7 @@ class Adding_Bank_Account_to_Demo_Org(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
-        cls.driver = webdriver.Firefox(executable_path=r"/Drivers/geckodriver-v0.26.0-win64/geckodriver.exe")
+        cls.driver = webdriver.Firefox(executable_path=r"C:/Users/power/Xero_Test/Xero/Drivers/geckodriver-v0.26.0-win64/geckodriver.exe")
         cls.driver.maximize_window()
 
         cls.driver.get("https://www.xero.com/nz/")
@@ -46,33 +46,32 @@ class Adding_Bank_Account_to_Demo_Org(unittest.TestCase):
         Homepage.Homepage.link_to_Bank_Accounts(self)
         Homepage.Homepage.Add_bank_Account_link(self)
 
-        wait = WebDriverWait(self.driver, 10)
+        wait = WebDriverWait(self.driver, 10000)
         wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'co-page-title')))
 
 
         # Add bank account
         BankAccountPage.Bank_Accounts.Account(self, 'ANZ (NZ)')
-        self.driver.implicitly_wait(10)
+        self.driver.implicitly_wait(10000)
         self.driver.find_element(By.XPATH, Locators.Locators.Search_For_ANZ).send_keys(Keys.TAB)
-
         self.driver.find_element(By.ID, Locators.Locators.Select_ANZ).click()
 
         #Landed on Add_Account_PageAdding Account details
 
-        element = WebDriverWait(self.driver, 5).until(
+        element = WebDriverWait(self.driver, 5000).until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, Locators.Locators.Acct_Name_Field))
         )
         element.click()
 
         #Add_Account_Name
 
-        words = ['SAVINGS', 'CREDIT', 'COMPANY', 'JOINT', 'NEW']
+        words = ['SAVINGS', 'CREDIT', 'COMPANY', 'JOINT', 'ODD']
         bank_name = random.choice(words)
 
         BankAccountPage.Bank_Accounts.Account_name(self, bank_name)
         BankAccountPage.Bank_Accounts.Account_Type(self)
 
-        self.driver.find_element(By.XPATH, '//input[@componentid="accountnumber-1068"]').send_keys('123')
+        self.driver.find_element(By.XPATH,'//div[@data-automationid="accountNumber"]//input]').send_keys('123')
         BankAccountPage.Bank_Accounts.Continue(self)
 
 
@@ -93,17 +92,22 @@ class Adding_Bank_Account_to_Demo_Org(unittest.TestCase):
         Homepage.Homepage.link_to_Accounting(self)
         Homepage.Homepage.link_to_Bank_Accounts(self)
         Homepage.Homepage.Add_bank_Account_link(self)
-        time.sleep(5)
+
+        wait = WebDriverWait(self.driver, 10000)
+        wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'co-page-title')))
+
 
         # Add bank account
         BankAccountPage.Bank_Accounts.Account(self, 'ANZ (NZ)')
-        WebDriverWait(self.driver,10).until(EC.presence_of_element_located((By.CLASS_NAME, "ba-banklist--title")))
+        self.driver.implicitly_wait(10000)
+        WebDriverWait(self.driver,10000).until(EC.presence_of_element_located((By.CLASS_NAME, "ba-banklist--title")))
+
         self.driver.find_element(By.XPATH, Locators.Locators.Search_For_ANZ).send_keys(Keys.TAB)
 
         self.driver.find_element(By.ID, Locators.Locators.Select_ANZ).click()
 
 
-        element = WebDriverWait(self.driver, 5).until(
+        element = WebDriverWait(self.driver, 5000).until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, Locators.Locators.Acct_Name_Field))
             )
         element.click()
@@ -115,23 +119,30 @@ class Adding_Bank_Account_to_Demo_Org(unittest.TestCase):
         BankAccountPage.Bank_Accounts.Account_name(self, dup_bank_name)
         BankAccountPage.Bank_Accounts.Account_Type(self)
 
-        self.driver.find_element(By.XPATH, '//input[@componentid="accountnumber-1068"]').send_keys('11111')
+        self.driver.find_element(By.CLASS_NAME, "xui-input").send_keys('11111')
+        self.driver.implicitly_wait(10000)
         BankAccountPage.Bank_Accounts.Continue(self)
+
         time.sleep(5)
 
-
-
+        Homepage.Homepage.link_to_Accounting(self)
+        Homepage.Homepage.link_to_Bank_Accounts(self)
         Homepage.Homepage.Add_bank_Account_link(self)
-        time.sleep(5)
         # Add bank account
+
+        wait = WebDriverWait(self.driver, 10000)
+        wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'co-page-title')))
+
         BankAccountPage.Bank_Accounts.Account(self, 'ANZ (NZ)')
-        WebDriverWait(self.driver,10).until(EC.presence_of_element_located((By.CLASS_NAME, "ba-banklist--title")))
+        self.driver.implicitly_wait(10000)
+        WebDriverWait(self.driver,10000).until(EC.presence_of_element_located((By.CLASS_NAME, "ba-banklist--title")))
+
         self.driver.find_element(By.XPATH, Locators.Locators.Search_For_ANZ).send_keys(Keys.TAB)
 
         self.driver.find_element(By.ID, Locators.Locators.Select_ANZ).click()
 
 
-        element = WebDriverWait(self.driver, 5).until(
+        element = WebDriverWait(self.driver, 5000).until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, Locators.Locators.Acct_Name_Field))
             )
         element.click()
@@ -156,27 +167,20 @@ class Adding_Bank_Account_to_Demo_Org(unittest.TestCase):
         BankAccountPage.Bank_Accounts.Account_name(self, dup_bank_name)
         BankAccountPage.Bank_Accounts.Account_Type(self)
 
-        self.driver.find_element(By.XPATH, '//input[@componentid="accountnumber-1068"]').send_keys('123')
+        self.driver.find_element(By.CLASS_NAME, "xui-input").send_keys('123')
         BankAccountPage.Bank_Accounts.Continue(self)
+        # self.driver._switch_to.alert()
+
 
 
         # alert = self.driver.find_element_by_link_text('Please enter a unique name').text
-        WebDriverWait(self.driver, 5).until(
-            EC.alert_is_present((By.XPATH, '//div//div[@role="alert"]')))
+        WebDriverWait(self.driver, 5000).until(
+            EC.visibility_of_element_located((By.XPATH, '//div[@id="accountname-1037"]//div[1]//div')))
 
-        actual = self.driver.find_element_by_xpath('//div[@role="alert"]').text
-        expected = 'Please enter a unique Name'
-        self.assertEqual(actual,expected)
+        print(self.driver.find_element_by_xpath('//div//div[2]//div//ul[@class="x-list-plain"]').text)
 
-
-
-
-
-
-        # actual_alert_message= self.driver.find_element(By.XPATH, '//div//div[@class="xui-inputmessage--body"]').text
-        # expected_alert_message = 'Please enter a unique name'
-        # self.assertEquals(alert, expected_alert_message)
-
+        # expected = 'Please enter a unique Name'
+        # self.assertEqual(actual,expected)
 
 
         DeleteBankAccount.Delete_Bank_Accounts.Navigate_to_Charts_of_BankAccounts(self)
