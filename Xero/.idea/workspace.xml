@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="efa2b2e4-f81e-4c6e-a6de-b3866904ba3e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Xero" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZQPH2MgNnQ1hi3fv988ysnPREJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\power\PycharmProjects\Xero\TestProjectXero\Demo" />
+      <recent name="C:\Users\power\PycharmProjects\Xero\Test\Scripts" />
+      <recent name="C:\Users\power\PycharmProjects\Xero\Test" />
+      <recent name="C:\Users\power\PycharmProjects\Xero\SeleniumTests\Tests" />
+      <recent name="C:\Users\power\PycharmProjects\Xero\SeleniumTests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in Test_Add_Bank_Account.py">
+    <configuration name="Unittests for Test_Add_Bank_Account.AddBankAccount.test_AddDuplicateBankAccount" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Xero" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\power\PycharmProjects\Xero\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestProjectXero/Demo/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test_Add_Bank_Account.AddBankAccount.test_AddDuplicateBankAccount&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for " type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="Xero" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in Test_Add_Bank_Account.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Xero" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\power\PycharmProjects\Xero\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestProjectXero/Demo/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/TestProjectXero/Demo/Tests/Test_Add_Bank_Account.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in Tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Xero" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\power\PycharmProjects\Xero\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestProjectXero/Demo/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/TestProjectXero/Demo/Tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_Add_new_bank_account.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Xero" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\power\PycharmProjects\Xero\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Test/Scripts/test_Add_new_bank_account.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="Xero" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\power\PycharmProjects\Xero\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_add_bank_account " type="tests" factoryName="Unittests">
+      <module name="Xero" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test.Scripts.test_Add_new_bank_account.AddBankAccount&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.Unittests for " />
+      <item itemvalue="Python tests.test_add_bank_account " />
+      <item itemvalue="Python tests.Unittests in test_Add_new_bank_account.py" />
+      <item itemvalue="Python tests.Unittests in Tests" />
+      <item itemvalue="Python tests.Unittests in Test_Add_Bank_Account.py" />
+      <item itemvalue="Python tests.Unittests for Test_Add_Bank_Account.AddBankAccount.test_AddDuplicateBankAccount" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in Test_Add_Bank_Account.py" />
+        <item itemvalue="Python tests.Unittests for Test_Add_Bank_Account.AddBankAccount.test_AddDuplicateBankAccount" />
+        <item itemvalue="Python tests.Unittests in Tests" />
+        <item itemvalue="Python tests.Unittests in test_Add_new_bank_account.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\power\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efa2b2e4-f81e-4c6e-a6de-b3866904ba3e" name="Default Changelist" comment="" />
+      <created>1584768253122</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584768253122</updated>
+      <workItem from="1585910805307" duration="826000" />
+      <workItem from="1586135113844" duration="2531000" />
+      <workItem from="1586142004758" duration="6229000" />
+      <workItem from="1586255484379" duration="3655000" />
+      <workItem from="1586334201091" duration="56069000" />
+      <workItem from="1586938350287" duration="8366000" />
+      <workItem from="1587012805950" duration="6711000" />
+      <workItem from="1587244875194" duration="15691000" />
+      <workItem from="1587353690834" duration="28331000" />
+      <workItem from="1587534702784" duration="6207000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="193" y="42" key="#Firefox_Settings" timestamp="1586255628454">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="193" y="42" key="#Firefox_Settings/0.0.1200.760@0.0.1200.760" timestamp="1586255628454" />
+    <state x="328" y="37" key="#Unittests_in_Tests" timestamp="1587352206756">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="328" y="37" key="#Unittests_in_Tests/0.0.1200.760@0.0.1200.760" timestamp="1587352206756" />
+    <state x="55" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587354829405">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="55" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1200.760@0.0.1200.760" timestamp="1587354829405" />
+    <state x="-10" y="139" width="813" height="575" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1587596606560">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="-10" y="139" width="813" height="575" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1200.760@0.0.1200.760" timestamp="1587596606560" />
+    <state x="342" y="191" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587246150538">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="342" y="191" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1200.760@0.0.1200.760" timestamp="1587246150538" />
+    <state x="330" y="170" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587354807106">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="330" y="170" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1200.760@0.0.1200.760" timestamp="1587354807106" />
+    <state x="328" y="22" key="#test_Add_new_bank_account" timestamp="1585910842197">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="328" y="22" key="#test_Add_new_bank_account/0.0.1200.760@0.0.1200.760" timestamp="1585910842197" />
+    <state x="93" y="93" width="1015" height="575" key="DiffContextDialog" timestamp="1584961156454">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="93" y="93" width="1015" height="575" key="DiffContextDialog/0.0.1200.760@0.0.1200.760" timestamp="1584961156454" />
+    <state x="335" y="145" key="EnvironmentVariablesDialog" timestamp="1584825527740">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="335" y="145" key="EnvironmentVariablesDialog/0.0.1200.760@0.0.1200.760" timestamp="1584825527740" />
+    <state x="380" y="138" key="FileChooserDialogImpl" timestamp="1584939536121">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="380" y="138" key="FileChooserDialogImpl/0.0.1200.760@0.0.1200.760" timestamp="1584939536121" />
+    <state x="427" y="298" key="Github.CreateGistDialog" timestamp="1584939766179">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="427" y="298" key="Github.CreateGistDialog/0.0.1200.760@0.0.1200.760" timestamp="1584939766179" />
+    <state width="1157" height="578" key="GridCell.Tab.0.bottom" timestamp="1587596606423">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state width="1157" height="578" key="GridCell.Tab.0.bottom/0.0.1200.760@0.0.1200.760" timestamp="1587596606423" />
+    <state width="1157" height="578" key="GridCell.Tab.0.center" timestamp="1587596606422">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state width="1157" height="578" key="GridCell.Tab.0.center/0.0.1200.760@0.0.1200.760" timestamp="1587596606422" />
+    <state width="1157" height="578" key="GridCell.Tab.0.left" timestamp="1587596606422">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state width="1157" height="578" key="GridCell.Tab.0.left/0.0.1200.760@0.0.1200.760" timestamp="1587596606422" />
+    <state width="1157" height="578" key="GridCell.Tab.0.right" timestamp="1587596606423">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state width="1157" height="578" key="GridCell.Tab.0.right/0.0.1200.760@0.0.1200.760" timestamp="1587596606423" />
+    <state width="1157" height="236" key="GridCell.Tab.1.bottom" timestamp="1587353627053">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state width="1157" height="236" key="GridCell.Tab.1.bottom/0.0.1200.760@0.0.1200.760" timestamp="1587353627053" />
+    <state width="1157" height="236" key="GridCell.Tab.1.center" timestamp="1587353627053">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state width="1157" height="236" key="GridCell.Tab.1.center/0.0.1200.760@0.0.1200.760" timestamp="1587353627053" />
+    <state width="1157" height="236" key="GridCell.Tab.1.left" timestamp="1587353627052">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state width="1157" height="236" key="GridCell.Tab.1.left/0.0.1200.760@0.0.1200.760" timestamp="1587353627052" />
+    <state width="1157" height="236" key="GridCell.Tab.1.right" timestamp="1587353627053">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state width="1157" height="236" key="GridCell.Tab.1.right/0.0.1200.760@0.0.1200.760" timestamp="1587353627053" />
+    <state x="104" y="26" key="SettingsEditor" timestamp="1587353621208">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="104" y="26" key="SettingsEditor/0.0.1200.760@0.0.1200.760" timestamp="1587353621208" />
+    <state x="308" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1587534712425">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="308" y="208" key="com.intellij.ide.util.TipDialog/0.0.1200.760@0.0.1200.760" timestamp="1587534712425" />
+    <state x="175" y="119" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584825704182">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="175" y="119" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1200.760@0.0.1200.760" timestamp="1584825704182" />
+    <state x="93" y="93" width="1015" height="575" key="dock-window-1" timestamp="1587356060889">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="93" y="93" width="1015" height="575" key="dock-window-1/0.0.1200.760@0.0.1200.760" timestamp="1587356060889" />
+    <state x="93" y="93" width="1015" height="575" key="dock-window-2" timestamp="1587356060889">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="93" y="93" width="1015" height="575" key="dock-window-2/0.0.1200.760@0.0.1200.760" timestamp="1587356060889" />
+    <state x="243" y="0" width="715" height="760" key="find.popup" timestamp="1587345157398">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="243" y="0" width="715" height="760" key="find.popup/0.0.1200.760@0.0.1200.760" timestamp="1587345157398" />
+    <state x="342" y="29" key="refactoring.ChangeSignatureDialog" timestamp="1584919128866">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="342" y="29" key="refactoring.ChangeSignatureDialog/0.0.1200.760@0.0.1200.760" timestamp="1584919128866" />
+    <state x="263" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1586340827102">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="263" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1200.760@0.0.1200.760" timestamp="1586340827102" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Xero$Unittests_in_Add_duplicate_bank_Account_py.coverage" NAME="Unittests in Add_duplicate_bank_Account.py Coverage Results" MODIFIED="1587352342730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/Scripts" />
+    <SUITE FILE_PATH="coverage/Xero$Unittests_for_EnvironmentSetup_EnvironmentSetup.coverage" NAME="Unittests for EnvironmentSetup.EnvironmentSetup Coverage Results" MODIFIED="1586334256737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/TestBase" />
+    <SUITE FILE_PATH="coverage/Xero$Unittests_in_Test_Add_Bank_Account_py.coverage" NAME="Unittests in Test_Add_Bank_Account.py Coverage Results" MODIFIED="1587548156579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestProjectXero/Demo/Tests" />
+    <SUITE FILE_PATH="coverage/Xero$Unittests_in_test_Add_new_bank_account_py.coverage" NAME="Unittests in test_Add_new_bank_account.py Coverage Results" MODIFIED="1587354905091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/Scripts" />
+    <SUITE FILE_PATH="coverage/Xero$test_Add_new_bank_account.coverage" NAME="test_Add_new_bank_account Coverage Results" MODIFIED="1586257771458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/Scripts" />
+    <SUITE FILE_PATH="coverage/Xero$Unittests_in_Tests.coverage" NAME="Unittests in Tests Coverage Results" MODIFIED="1587355327348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestProjectXero/Demo/Tests" />
+    <SUITE FILE_PATH="coverage/Xero$Unittests_for_Test_Add_Bank_Account_AddBankAccount_test_AddDuplicateBankAccount.coverage" NAME="Unittests for Test_Add_Bank_Account.AddBankAccount.test_AddDuplicateBankAccount Coverage Results" MODIFIED="1587418110154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestProjectXero/Demo/Tests" />
+  </component>
+</project>

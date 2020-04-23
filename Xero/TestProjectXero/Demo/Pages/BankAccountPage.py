@@ -1,0 +1,41 @@
+from selenium.webdriver.common.by import By
+
+from TestProjectXero.Demo.Locators import Locators
+class Bank_Accounts(object):
+
+
+    def __init__( self, driver ):
+            self.driver = driver
+
+    def Org(self):
+        self.driver.find_element(By.CLASS_NAME, 'xrh-appmenucontainer').click()
+
+    def Account(self, bank_name):
+        self.driver.find_element(By.XPATH, Locators.Locators.Bank).send_keys(bank_name)
+        # test.send_keys(Keys.TAB)
+
+    def Result( self ):
+        self.driver.find_element(By.XPATH, Locators.Locators.Results)
+
+
+    def Account_name(self, acc_name):
+       self.driver.find_element(By.XPATH, Locators.Locators.AccountName).send_keys(acc_name)
+
+    def Account_Type(self):
+        self.driver.find_element(By.CSS_SELECTOR, 'input[id^="accounttype"]').click()
+        self.driver.find_element(By.CSS_SELECTOR, "li.ba-combo-list-item").click()
+
+
+    def Account_number(self, acc_number):
+        self.driver.find_element(By.ID, 'accountnumber-1068').send_keys(acc_number)
+
+    def Continue(self):
+        self.driver.find_element(By.CSS_SELECTOR , 'a[data-automationid="continueButton"]').click()
+
+
+
+
+
+
+
+
