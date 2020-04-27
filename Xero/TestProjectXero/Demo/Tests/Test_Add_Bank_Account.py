@@ -12,16 +12,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
-import HtmlTestRunner
 
-words = ['SAVINGS', 'CREDIT', 'COMPANY', 'JOINT', 'CHARITY']
-bank_name = random.choice(words)
 
 
 class Adding_Bank_Account_to_Demo_Org(unittest.TestCase):
-
-
-##This setup classmethod will run only once before all the test methods. Here its used to login, and capturing the org
 
     @classmethod
     def setUpClass(cls) -> None:
@@ -44,44 +38,45 @@ class Adding_Bank_Account_to_Demo_Org(unittest.TestCase):
         print(Org.text)
         Org.click()
 
-##This setup self method will run before every test method. Here it is going to the Bank Accounts page, selecting ANZ NZ account
-# and filling up the form and submitting it
 
-    def setUp(self) -> None:
+    def test_Adding_New_Bank_Account(self):
+
+
         Homepage.Homepage.link_to_Accounting(self)
         Homepage.Homepage.link_to_Bank_Accounts(self)
         Homepage.Homepage.Add_bank_Account_link(self)
 
-        WebDriverWait(self.driver, 10000).until(
-            EC.visibility_of_element_located((By.XPATH, '//h1[@class="ba-page-title"]')))
+        wait = WebDriverWait(self.driver, 10000)
+        wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'co-page-title')))
 
-        # Find ANZ (NZ) from the list and go to Account details
-        BankAccountPage.Bank_Accounts.Find_your_bank(self, 'ANZ (NZ)')
-        time.sleep(2)
 
-        self.driver.find_element(By.XPATH, Locators.Locators.Bank_Name).send_keys(Keys.TAB)
+        # Add bank account
+        BankAccountPage.Bank_Accounts.Account(self, 'ANZ (NZ)')
+        self.driver.implicitly_wait(10000)
+        self.driver.find_element(By.XPATH, Locators.Locators.Search_For_ANZ).send_keys(Keys.TAB)
+        self.driver.find_element(By.ID, Locators.Locators.Select_ANZ).click()
 
-        self.driver.find_element(By.ID, Locators.Locators.Select_Result).click()
+        #Landed on Add_Account_PageAdding Account details
 
-        #Add account details - AccountName,AccountType,AccountNumber
-        element = WebDriverWait(self.driver, 10000).until(
+        element = WebDriverWait(self.driver, 5000).until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, Locators.Locators.Acct_Name_Field))
-            )
+        )
         element.click()
+
+        #Add_Account_Name
+
+        words = ['SAVINGS', 'CREDIT', 'COMPANY', 'JOINT', 'ODD']
+        bank_name = random.choice(words)
 
         BankAccountPage.Bank_Accounts.Account_name(self, bank_name)
         BankAccountPage.Bank_Accounts.Account_Type(self)
-        time.sleep(2)
 
-        BankAccountPage.Bank_Accounts.Account_number(self, 12345)
-        WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR,Locators.Locators.Continue_button)))
-
+        self.driver.find_element(By.XPATH,'//div[@data-automationid="accountNumber"]//input]').send_keys('123')
         BankAccountPage.Bank_Accounts.Continue(self)
 
-#This teardown method will run after every test method. Here it is deleting the bank acccount that is added.
 
-    def tearDown(self) -> None:
+        yt = self.driver.find_element(By.XPATH, '//div[@id="notify01"]//div[@class="message"]').text
+        self.assertEqual(yt, bank_name +' has been added.')
 
         DeleteBankAccount.Delete_Bank_Accounts.Navigate_to_Charts_of_BankAccounts(self)
         DeleteBankAccount.Delete_Bank_Accounts.Search_bank_account(self, bank_name)
@@ -90,61 +85,112 @@ class Adding_Bank_Account_to_Demo_Org(unittest.TestCase):
         deleteMessage = self.driver.find_element(By.XPATH, Locators.Locators.DeleteConfirmButton).text
         print(deleteMessage)
 
-#Thats the first test case. To verify that bank account is added successfully.
-    def test_Adding_New_Bank_Account(self):
-
-
-        Verify_Bank_Acc_Added = self.driver.find_element(By.XPATH, Locators.Locators.success_message).text
-        self.assertEqual(Verify_Bank_Acc_Added, bank_name +' has been added.')
-
-
-#This is the test case to verify that duplicate account cannot be added. I am adding the same bank name in
-# the form for adding the bank account details and verifying that the promt alert is shown.
 
     def test_Add_Dup_Bank_Account(self):
-        print((self.driver.find_element(By.XPATH, Locators.Locators.success_message)).text)
+
 
         Homepage.Homepage.link_to_Accounting(self)
         Homepage.Homepage.link_to_Bank_Accounts(self)
         Homepage.Homepage.Add_bank_Account_link(self)
 
-        WebDriverWait(self.driver, 10000).until(
-            EC.visibility_of_element_located((By.XPATH, Locators.Locators.page_title)))
+        wait = WebDriverWait(self.driver, 10000)
+        wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'co-page-title')))
 
-        # Find ANZ (NZ) from the list and go to Account details
-        BankAccountPage.Bank_Accounts.Find_your_bank(self, 'ANZ (NZ)')
-        time.sleep(2)
 
-        self.driver.find_element(By.XPATH, Locators.Locators.Bank_Name).send_keys(Keys.TAB)
+        # Add bank account
+        BankAccountPage.Bank_Accounts.Account(self, 'ANZ (NZ)')
+        self.driver.implicitly_wait(10000)
+        WebDriverWait(self.driver,10000).until(EC.presence_of_element_located((By.CLASS_NAME, "ba-banklist--title")))
 
-        self.driver.find_element(By.ID, Locators.Locators.Select_Result).click()
+        self.driver.find_element(By.XPATH, Locators.Locators.Search_For_ANZ).send_keys(Keys.TAB)
 
-        #waiting for the Bank accounts page to load
+        self.driver.find_element(By.ID, Locators.Locators.Select_ANZ).click()
 
-        element = WebDriverWait(self.driver, 10000).until(
+
+        element = WebDriverWait(self.driver, 5000).until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, Locators.Locators.Acct_Name_Field))
             )
         element.click()
 
-        #Filling up the form for Bank Account
+        #Add Account Name
+        words = ['PRIYA', 'NEWZEALAND', 'INDIA', 'AFRICA', 'ISLAND']
+        dup_bank_name = random.choice(words)
 
-        BankAccountPage.Bank_Accounts.Account_name(self, bank_name)
+        BankAccountPage.Bank_Accounts.Account_name(self, dup_bank_name)
         BankAccountPage.Bank_Accounts.Account_Type(self)
-        time.sleep(2)
 
-        BankAccountPage.Bank_Accounts.Account_number(self, 12345)
-
+        self.driver.find_element(By.CLASS_NAME, "xui-input").send_keys('11111')
+        self.driver.implicitly_wait(10000)
         BankAccountPage.Bank_Accounts.Continue(self)
 
-        #waiting for the prompt alert to appear and then capturing it
+        time.sleep(5)
 
+        Homepage.Homepage.link_to_Accounting(self)
+        Homepage.Homepage.link_to_Bank_Accounts(self)
+        Homepage.Homepage.Add_bank_Account_link(self)
+        # Add bank account
+
+        wait = WebDriverWait(self.driver, 10000)
+        wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'co-page-title')))
+
+        BankAccountPage.Bank_Accounts.Account(self, 'ANZ (NZ)')
+        self.driver.implicitly_wait(10000)
+        WebDriverWait(self.driver,10000).until(EC.presence_of_element_located((By.CLASS_NAME, "ba-banklist--title")))
+
+        self.driver.find_element(By.XPATH, Locators.Locators.Search_For_ANZ).send_keys(Keys.TAB)
+
+        self.driver.find_element(By.ID, Locators.Locators.Select_ANZ).click()
+
+
+        element = WebDriverWait(self.driver, 5000).until(
+            EC.visibility_of_element_located((By.CSS_SELECTOR, Locators.Locators.Acct_Name_Field))
+            )
+        element.click()
+        # BankAccountPage.Bank_Accounts.Account(self, 'ANZ (NZ)')
+        # time.sleep(5)
+        # self.driver.find_element(By.XPATH, "//input[@role='textbox']").send_keys(Keys.TAB)
+        #
+        # self.driver.find_element(By.ID, "ba-banklist-1023").click()
+        #
+        # try:
+        #     element = WebDriverWait(self.driver, 5).until(
+        #         EC.visibility_of_element_located((By.CSS_SELECTOR, 'input[id^="accountname"]'))
+        #     )
+        #     element.click()
+        # finally:
+        #     print('yay')
+
+
+
+        # acc_name = rand_text
+
+        BankAccountPage.Bank_Accounts.Account_name(self, dup_bank_name)
+        BankAccountPage.Bank_Accounts.Account_Type(self)
+
+        self.driver.find_element(By.CLASS_NAME, "xui-input").send_keys('123')
+        BankAccountPage.Bank_Accounts.Continue(self)
+        # self.driver._switch_to.alert()
+
+
+
+        # alert = self.driver.find_element_by_link_text('Please enter a unique name').text
         WebDriverWait(self.driver, 5000).until(
-            EC.visibility_of_element_located((By.XPATH, Locators.Locators.prompt_alert)))
+            EC.visibility_of_element_located((By.XPATH, '//div[@id="accountname-1037"]//div[1]//div')))
 
-        alert = self.driver.find_element_by_xpath(Locators.Locators.prompt_alert).text
-        self.assertEqual(alert, 'Please enter a unique Name')
+        print(self.driver.find_element_by_xpath('//div//div[2]//div//ul[@class="x-list-plain"]').text)
+
+        # expected = 'Please enter a unique Name'
+        # self.assertEqual(actual,expected)
 
 
+        DeleteBankAccount.Delete_Bank_Accounts.Navigate_to_Charts_of_BankAccounts(self)
+        DeleteBankAccount.Delete_Bank_Accounts.Search_bank_account(self, dup_bank_name)
+        DeleteBankAccount.Delete_Bank_Accounts.Delete_bank_account(self)
+
+        deleteMessage = self.driver.find_element(By.XPATH, Locators.Locators.DeleteConfirmButton).text
+        print(deleteMessage)
+
+        # Contains teardown attributes
 
     @classmethod
     def tearDownClass(cls) -> None:
