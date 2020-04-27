@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa2b2e4-f81e-4c6e-a6de-b3866904ba3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProjectXero/Demo/Locators/Locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestProjectXero/Demo/Locators/Locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProjectXero/Demo/Pages/BankAccountPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestProjectXero/Demo/Pages/BankAccountPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestProjectXero/Demo/Tests/Test_Add_Bank_Account.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestProjectXero/Demo/Tests/Test_Add_Bank_Account.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestProjectXero/Demo/Tests/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/TestProjectXero/Demo/Tests/geckodriver.log" afterDir="false" />
     </list>
@@ -214,8 +213,7 @@
       <workItem from="1587244875194" duration="15691000" />
       <workItem from="1587353690834" duration="28331000" />
       <workItem from="1587534702784" duration="6207000" />
-      <workItem from="1587609558439" duration="31366000" />
-      <workItem from="1587722279802" duration="9630000" />
+      <workItem from="1587609558439" duration="10180000" />
     </task>
     <servers />
   </component>
@@ -267,22 +265,22 @@
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="427" y="298" key="Github.CreateGistDialog/0.0.1200.760@0.0.1200.760" timestamp="1584939766179" />
-    <state width="1157" height="578" key="GridCell.Tab.0.bottom" timestamp="1587899374093">
+    <state width="1157" height="578" key="GridCell.Tab.0.bottom" timestamp="1587637365086">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
-    <state width="1157" height="578" key="GridCell.Tab.0.bottom/0.0.1200.760@0.0.1200.760" timestamp="1587899374093" />
-    <state width="1157" height="578" key="GridCell.Tab.0.center" timestamp="1587899374093">
+    <state width="1157" height="578" key="GridCell.Tab.0.bottom/0.0.1200.760@0.0.1200.760" timestamp="1587637365086" />
+    <state width="1157" height="578" key="GridCell.Tab.0.center" timestamp="1587637365084">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
-    <state width="1157" height="578" key="GridCell.Tab.0.center/0.0.1200.760@0.0.1200.760" timestamp="1587899374093" />
-    <state width="1157" height="578" key="GridCell.Tab.0.left" timestamp="1587899374092">
+    <state width="1157" height="578" key="GridCell.Tab.0.center/0.0.1200.760@0.0.1200.760" timestamp="1587637365084" />
+    <state width="1157" height="578" key="GridCell.Tab.0.left" timestamp="1587637365084">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
-    <state width="1157" height="578" key="GridCell.Tab.0.left/0.0.1200.760@0.0.1200.760" timestamp="1587899374092" />
-    <state width="1157" height="578" key="GridCell.Tab.0.right" timestamp="1587899374093">
+    <state width="1157" height="578" key="GridCell.Tab.0.left/0.0.1200.760@0.0.1200.760" timestamp="1587637365084" />
+    <state width="1157" height="578" key="GridCell.Tab.0.right" timestamp="1587637365085">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
-    <state width="1157" height="578" key="GridCell.Tab.0.right/0.0.1200.760@0.0.1200.760" timestamp="1587899374093" />
+    <state width="1157" height="578" key="GridCell.Tab.0.right/0.0.1200.760@0.0.1200.760" timestamp="1587637365085" />
     <state width="1157" height="236" key="GridCell.Tab.1.bottom" timestamp="1587353627053">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
@@ -303,10 +301,10 @@
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="104" y="26" key="SettingsEditor/0.0.1200.760@0.0.1200.760" timestamp="1587353621208" />
-    <state x="308" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1587722296063">
+    <state x="308" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1587534712425">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
-    <state x="308" y="208" key="com.intellij.ide.util.TipDialog/0.0.1200.760@0.0.1200.760" timestamp="1587722296063" />
+    <state x="308" y="208" key="com.intellij.ide.util.TipDialog/0.0.1200.760@0.0.1200.760" timestamp="1587534712425" />
     <state x="175" y="119" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584825704182">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
@@ -335,7 +333,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Xero$Unittests_in_Add_duplicate_bank_Account_py.coverage" NAME="Unittests in Add_duplicate_bank_Account.py Coverage Results" MODIFIED="1587352342730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/Scripts" />
     <SUITE FILE_PATH="coverage/Xero$Unittests_for_EnvironmentSetup_EnvironmentSetup.coverage" NAME="Unittests for EnvironmentSetup.EnvironmentSetup Coverage Results" MODIFIED="1586334256737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/TestBase" />
-    <SUITE FILE_PATH="coverage/Xero$Unittests_in_Test_Add_Bank_Account_py.coverage" NAME="Unittests in Test_Add_Bank_Account.py Coverage Results" MODIFIED="1587899374023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestProjectXero/Demo/Tests" />
+    <SUITE FILE_PATH="coverage/Xero$Unittests_in_Test_Add_Bank_Account_py.coverage" NAME="Unittests in Test_Add_Bank_Account.py Coverage Results" MODIFIED="1587637312798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestProjectXero/Demo/Tests" />
     <SUITE FILE_PATH="coverage/Xero$Unittests_in_test_Add_new_bank_account_py.coverage" NAME="Unittests in test_Add_new_bank_account.py Coverage Results" MODIFIED="1587354905091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/Scripts" />
     <SUITE FILE_PATH="coverage/Xero$test_Add_new_bank_account.coverage" NAME="test_Add_new_bank_account Coverage Results" MODIFIED="1586257771458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/Scripts" />
     <SUITE FILE_PATH="coverage/Xero$Unittests_in_Tests.coverage" NAME="Unittests in Tests Coverage Results" MODIFIED="1587355327348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestProjectXero/Demo/Tests" />
